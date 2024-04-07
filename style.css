@@ -1,0 +1,133 @@
+@charset "utf-8";
+html,body {height: 100%;}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #ffffff;
+	font-family:"sans-serif";
+	font-size: 22px;
+	line-height: 2;
+	background: #000000;
+	-webkit-text-size-adjust: none;}
+
+h1,h2,h3{
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	font-weight:normal;}
+
+@keyframes opa1 {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+a {
+	color: #ffffff;
+	transition: 0.5s;
+	font-size: 20px;
+
+}
+a2 {
+	color: #ffffff;
+	transition: 0.5s;
+	font-size: 10px;
+
+}
+small2 {
+  font-size: 10px;
+
+}
+
+
+header {
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	background: #193f8f;
+}
+
+header #logo img {
+	display: block;
+	width: 20%;
+	position: absolute;
+	left: 40%;		
+	bottom: 50%;
+}
+
+
+#menubar {
+	position: absolute;
+	bottom: 30%;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+#menubar li {
+	display: inline-block;
+	margin: 0 1%;
+	animation-name: opa1;
+	animation-delay: 1S;
+	animation-duration: 1S;
+	animation-fill-mode: both;
+}
+#menubar li a {
+	text-decoration: none;display: block;text-align: center;
+	width: 140px;
+	color: #ffffff;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 7px;
+}
+
+#menubar li a:hover {
+	border-bottom: 2px solid #fff;
+	letter-spacing: 0.1em;
+}
+
+#menubar2 {
+	position: absolute;
+	margin-bottom: -5%;
+	bottom: 20%;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+#menubar2 li {
+	display: inline-block;
+	margin: 0 1%;
+
+#menubar2 li a {
+	text-decoration: none;display: block;text-align: center;
+	width: 140px;
+	color: #ffffff;
+	border-bottom: 2px solid transparent;
+	padding-bottom: 7px;
+}
+
+#menubar2 li a:hover {
+	border-bottom: 2px solid #fff;
+	letter-spacing: 0.1em;
+}
+
+
+footer {
+	clear: both;
+	text-align: center;
+	background: #000000;
+	color: #000000;
+	font-size: 85%;
+}
+footer .pr {
+	display: block;
+	font-size: 80%;
+}
+
+
+
+@media screen and (max-width:800px){
+header #logo img {
+	width: 30%;	
+	left: 35%; }}
+@media screen and (max-width:480px){
+header #logo img {
+	width: 50%;	
+	left: 25%; }}
