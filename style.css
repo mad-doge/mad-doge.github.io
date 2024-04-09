@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+html,body {height: 100%;}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #776955;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 2;	
+	background: #000000;
+	-webkit-text-size-adjust: none;
+}
+
+h1,h2,h3,dl,dt,dd {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
+@keyframes opa1 {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+a {
+	color: #ffffff;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header p {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 5%;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+}
+
+header p {
+	text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+	animation-name: opa1;
+	animation-delay: 1S;
+	animation-duration: 1S;
+	animation-fill-mode: both;
+}
+
+@media (max-width: 400px) {
+	header p {
+	  font-size: 12px;
+	}
+	header a {
+		font-size: 12px;
+	  }
+  }
+
+@media (max-width: 600px) {
+  header p {
+    font-size: 16px;
+  }
+}
+
+word {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 60%;
+}
+word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+}
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  top: 15%;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0% auto;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+}
+.modal-content word {
+  color: black;
+}
+
+
+@media (max-width: 600px) {
+  .modal {
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 5%;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: 95%;
+  }
+}
+
+.close {
+  color: #000000;
+  padding-top: 0px;
+  margin-top:-20px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+header {
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header #logo img {
+	display: block;
+	width: 20%;
+	position: absolute;
+	left: 40%;
+	bottom: 50%;
+	animation-name: opa1;
+	animation-delay: 1S;
+	animation-duration: 1S;
+	animation-fill-mode: both;
+}
+
+
+#menubar {
+	position: absolute;
+	bottom: 20%;
+	left: -18px;
+	width: 100%;
+	text-align: center;
+}
+
+#menubar li {
+	display: inline-block;
+	margin: 0 1%;
+	animation-name: opa1;
+	animation-delay: 1S;
+	animation-duration: 1S;
+	animation-fill-mode: both;
+}
+
+#menubar li img:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+#logo img:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+#menubar2 {
+	position: absolute;
+	bottom: 33%;
+	left: -18px;
+	width: 100%;
+	text-align: center;
+}
+
+#menubar2 li {
+	display: inline-block;
+	margin: 0 1%;
+	animation-name: opa1;
+	animation-delay: 1S;
+	animation-duration: 1S;
+	animation-fill-mode: both;
+}
+
+#menubar2 li img:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+#logo2 img:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width:480px){
+	header #logo img {
+		width: 50%;
+		left: 25%;
+		position: relative;
+		padding-top: 210px; /* Move the logo slightly up */
+	}
+}
+
+
+@media screen and (max-width:380px){
+	header #logo img {
+		width: 50%;
+		left: 25%;
+		position: relative;
+		padding-top: 80px;
+	}
+}
+
+
+
+#container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+#contents {
+	overflow: hidden;
+	padding: 50px 3%;
+}
+
+#contents section + section {
+	padding-top: 50px;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	background: #000000;
+	color: #fff;
+	font-size: 85%;	
+	line-height:16px;
+} 
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+ul.disc {
+	list-style: disc;
+	padding: 0 20px 20px 55px;
+}
+
+ol {
+	padding: 0 20px 20px 42px;
+}
+
+@media screen and (max-width:800px){
+header #logo img {
+	width: 30%;
+	left: 35%;
+}
+}
+
+@media screen and (max-width:480px){
+header #logo img {
+	width: 50%;
+	left: 25%;
+}
+
+@media screen and (min-height: 1080px) {
+	header {
+	  background-image: url(bg.jpg);
+	  background-size: 100% auto;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	}
+  }
+
+#container {
+	font-size: 12px;
+	font-size: 2.93vw;
+}
+}
